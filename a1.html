@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Hajime in hearts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+    <link rel="stylesheet" href="index.css">
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    
+      <div class="main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3>Hajime pt1</h3>
+            </div>
+            <div class="col-md-3" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1200">
+              <a href="javascript:void();" class="album-poster" data-switch="0">
+                <img src="img/h1.jpg" alt="">
+              </a>
+              <h4>Hajime </h4>
+              
+            </div>
+
+
+
+             <div class="col-md-3" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1200">
+              <a href="javascript:void();" class="album-poster" data-switch="1">
+                <img src="img/h1.jpg" alt="">
+              </a>
+              <h4>OneLove</h4>
+              
+            </div>
+
+
+
+
+             <div class="col-md-3" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1200">
+              <a href="javascript:void();" class="album-poster" data-switch="2">
+                <img src="img/h1.jpg" alt="">
+              </a>
+              <h4>God Bless</h4>
+              
+            </div>
+
+
+
+
+
+             <div class="col-md-3" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1200">
+              <a href="javascript:void();" class="album-poster" data-switch="3">
+                <img src="img/h1.jpg" alt="">
+              </a>
+              <h4>Санавабич</h4>
+              
+            </div>
+
+
+
+
+
+             <div class="col-md-3" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1200">
+              <a href="javascript:void();" class="album-poster" data-switch="4">
+                <img src="img/h1.jpg" alt="">
+              </a>
+              <h4>Половина моя</h4>
+              
+            </div>
+
+
+
+
+
+             <div class="col-md-3" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1200">
+              <a href="javascript:void();" class="album-poster" data-switch="5">
+                <img src="img/h1.jpg" alt="">
+              </a>
+              <h4>Лабиринты</h4>
+              
+            </div>
+
+
+
+
+             <div class="col-md-3" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1200">
+              <a href="javascript:void();" class="album-poster" data-switch="6">
+                <img src="img/h1.jpg" alt="">
+              </a>
+              <h4>Без обид</h4>
+              
+            </div>
+
+
+
+
+
+             <div class="col-md-3" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1200">
+              <a href="javascript:void();" class="album-poster" data-switch="7">
+                <img src="img/h1.jpg" alt="">
+              </a>
+              <h4>Бейба судьба</h4>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+<div id="aplayer"></div>
+
+
+
+ <!-- /Jquery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  
+
+   <!-- /Aplayer -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+
+    <!--My Code-->
+    <script>
+
+
+      $(".album-poster").on('click',function(e){
+        var dataSwithId = $(this).attr('data-switch');
+        console.log(dataSwithId);
+        //
+        ap.list.switch(dataSwithId);
+
+        //
+
+        ap.play();
+        //
+
+        $("#aplayer").addClass('showPlayer');
+
+
+      });
+
+
+
+      const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    listFolded:true,
+    audio: [{
+        name: 'Hajime',
+        artist: 'Miyagi & Andy Panda',
+        url: 'Music/1/1.mp3',
+        cover: 'img/h1.jpg'
+    }
+    ,
+
+    {
+        name: 'OneLove',
+        artist: 'Miyagi & Andy Panda',
+        url: 'Music/1/2.mp3',
+        cover: 'img/h1.jpg'
+    },
+
+
+    {
+        name: 'God Bless',
+        artist: 'Miyagi & Andy Panda',
+        url: 'Music/1/3.mp3',
+        cover: 'img/h1.jpg'
+    },
+
+
+    {
+        name: 'Санавабич',
+        artist: 'Miyagi & Andy Panda',
+        url: 'Music/1/4.mp3',
+        cover: 'img/h1.jpg'
+    },
+
+
+
+    {
+        name: 'Половина Моя',
+        artist: 'Miyagi & Andy Panda',
+        url: 'Music/1/5.mp3',
+        cover: 'img/h1.jpg'
+    },
+
+    {
+        name: 'Лабиринты',
+        artist: 'Miyagi & Andy Panda',
+        url: 'Music/1/6.mp3',
+        cover: 'img/h1.jpg'
+    },
+
+    {
+        name: 'Без обид',
+        artist: 'Miyagi & Andy Panda',
+        url: 'Music/1/7.mp3',
+        cover: 'img/h1.jpg'
+    },
+
+    {
+        name: 'Бейба судьба',
+        artist: 'Miyagi & Andy Panda',
+        url: 'Music/1/8.mp3',
+        cover: 'img/h1.jpg'
+    }
+
+
+
+    ]
+});
+
+    </script>
+
+    
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+  </body>
+</html>
